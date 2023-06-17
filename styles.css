@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(20, 20, 20);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(218, 218, 218);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar{
+    border-bottom: 3px solid;
+    height: 50px;
+    width: 100%;
+    background-color: inherit;
+    position: fixed;
+    top:0;
+    padding-top:8px;
+    z-index: 1;
+}
+.navbar ul {
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    /* background-color: skyblue; */
+    margin:0;
+}
+
+.items{
+    font-family: inherit;
+    font-size: 25px;
+    color:inherit;
+    /* background-color: orange; */
+}
+
+.items:hover{
+    border-bottom: 2px solid;
+}
+.items a {
+    text-decoration: none;
+    color:inherit;
+}
+.main{
+    margin-top:50px;
+}
+
+.part1{
+    /* background-color: orange; */
+    height: 665px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.part2{
+    /* background-color: blueviolet; */
+    height: 665px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.part3{
+    /* background-color: rgb(145, 43, 60); */
+    height: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    height:500px;
+    width:900px;
+    border-radius: 20px;
+    /* background-color: rgba(91, 91, 91,0.5); */
+    font-family:inherit;
+    font-size:200px;
+    text-align: center;
+    /* color:rgba(91, 91, 91,1) ; */
+    color:inherit;
+}
+
+.heroInside{
+    /* background-color: yellow; */
+    margin:0;
+    position: relative;
+    top:40%;
+    transform:translateY(-50%) ;
+}
+
+.buttonEdit{
+    font-size: 20px;
+    font-family: inherit;
+    background-color:inherit;
+    border:2px solid;
+    color:inherit;
+    border-radius: 5px;
+    height: 45px;
+    padding:5px 10px;
+}
+
+.visible {
+    display: none;
+}
+
+.sideBar{
+    color:inherit;
+    width:300px;
+    position: fixed;
+    /* background-color: skyblue; */
+    /* border: 2px solid red; */
+    top:50px;
+    right:0;
+}
+
+.sideBar ul{
+    list-style-type: none;
+}
+.sideItems{
+    font-size: 25px;
+    font-family: inherit;
+    border-bottom: 2px solid ;
+}
+
+.sideItemsBlocks{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 50px;
+    height:50px;
+    margin:5px;
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+
+.block1{
+    background-color:rgb(20, 20, 20);
+}
+.block2{
+    background-color: cyan;
+}
+.block3{
+    background-color: purple;
+}
+.block4{
+    background-color: green;
+}
+.block5{
+    background-color: orange;
+}
+.block6{
+    background-color: white;
+}
+.block7{
+    background-color: red;
+}
+
+.fontFamily ul{
+    list-style-type: none;
+}
+
+.family{
+    font-size: 20px;
+    border-bottom: 1px solid ;
+}
+
+.family1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.family2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.family3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.family4{
+    font-family: 'Times New Roman', Times, serif;
+}
+.family5{
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: none;
+}
+
+
+.bgImage{
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    border-radius: 10px;
+}
+
+.Image1{
+    background-image: url("Image1.jpg");
+    background-size: 100% 100%;
+}
+.Image2{
+    background-image: url("Image2.jpg");
+    background-size: 100% 100%;
+}
+.Image3{
+    background-image: url("Image3.jpg");
+    background-size: 100% 100%;
+}
+.Image4{
+    background-image: url("Image4.jpg");
+    background-size: 100% 100%;
+}
+.Image5{
+    background-image: url("Image5.jpg");
+    background-size: 100% 100%;
+}
+.Image6{
+    background-image: url("Image6.jpg");
+    background-size: 100% 100%;
+}
+.Image7{
+    background-image: url("Image7.jpg");
+    background-size: 100% 100%;
+}
+
+
+.aboutWeb{
+    margin:0;
+    font-size: 15px;
+    border-bottom: none;
+}
+/* .bodyBgImage{
+
+} */
+
+.messageBox{
+    position: fixed;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: red; */
+}
+#message{
+    color:inherit;
+    font-size: 25px;
+}
