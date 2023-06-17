@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Divyanshu">
+    <meta name="description" content="This website provides Clock and Stopwatch which can be cutomised by background-color,font-color,font-style,background-image ">
+    <title>SAMAY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li id="clock" class="items"><a href="#part1">Clock</a></li>
+            <li id="Stopwatch" class="items"><a href="#part2">Stopwatch</a></li>
+            <li id="timer" class="items" onclick="messageShow()"><a href="#part3">Timer</a></li>
+            <li id="settings" class="items" onclick="sideBarVisible(sidebarUl)">Settings</li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <div class="part1" id="part1">
+            <div class="clock hero"><p id="mainClock" class="heroInside"></p></div>
+        </div>
+
+        <div class="part2" id="part2">
+            <div class="stopWatch hero">
+                <p id="mainWatch" class="heroInside">00:00:00</p>
+                <div class="btns">
+                    <button id="start" class="buttonEdit">Start/Stop</button>
+                    <button id="reset" class="buttonEdit visible">Reset</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sideBar">
+    <ul class="sidebarUl visible">
+        <li class="sideItems ">
+            Background
+            <div class="sideItemsBlocks">
+                <div class="block block1" onclick="changeBodyBackgound('rgb(20, 20, 20)')"></div>
+                <div class="block block2" onclick="changeBodyBackgound('cyan')"></div>
+                <div class="block block3" onclick="changeBodyBackgound('purple')"></div>
+                <div class="block block4" onclick="changeBodyBackgound('green')"></div>
+                <div class="block block5" onclick="changeBodyBackgound('orange')"></div>
+                <div class="block block6" onclick="changeBodyBackgound('white')"></div>
+                <div class="block block7" onclick="changeBodyBackgound('Red')"></div>
+            </div>
+        </li>
+        
+        <li class="sideItems ">Font Color
+            <div class="sideItemsBlocks">
+                <div class="block block1" onclick="changeBodyColor('rgb(20, 20, 20)')"></div>
+                <div class="block block2" onclick="changeBodyColor('cyan')"></div>
+                <div class="block block3" onclick="changeBodyColor('purple')"></div>
+                <div class="block block4" onclick="changeBodyColor('green')"></div>
+                <div class="block block5" onclick="changeBodyColor('orange')"></div>
+                <div class="block block6" onclick="changeBodyColor('white')"></div>
+                <div class="block block7" onclick="changeBodyColor('red')"></div>
+            </div>
+        </li>
+
+        <li class="sideItems ">Font Family
+            <div class="fontFamily">
+                <ul>
+                    <li class="family family1" onclick="changeBodyFont('Gill Sans')">Gill Sans/Sans-Serif</li>
+                    <li class="family family2" onclick="changeBodyFont('Arial, Helvetica, sans-serif')" >Arial/Sans-Serif</li>
+                    <li class="family family3" onclick="changeBodyFont('Georgia, serif')">Gerogia/Serif</li>
+                    <li class="family family4" onclick="changeBodyFont('Times, serif')">Times/Serif</li>
+                    <li class="family family5" onclick="changeBodyFont('Courier, monospace')">Courier /Monospace</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="sideItems " >Background Images
+            <div class="sideItemsBlocks">
+                <div class="bgImage Image1" onclick="changeBodyBackgoundImages('Image1.jpg')"></div>
+                <div class="bgImage Image2" onclick="changeBodyBackgoundImages('Image2.jpg')"></div>
+                <div class="bgImage Image3" onclick="changeBodyBackgoundImages('Image3.jpg')"></div>
+                <div class="bgImage Image4" onclick="changeBodyBackgoundImages('Image4.jpg')"></div>
+                <div class="bgImage Image5" onclick="changeBodyBackgoundImages('Image5.jpg')"></div>
+                <div class="bgImage Image6" onclick="changeBodyBackgoundImages('Image6.jpg')"></div>
+                <div class="bgImage Image7" onclick="changeBodyBackgoundImages('Image7.jpg')"></div>
+            </div>
+        </li>
+        <li class="sideItems "><p class="aboutWeb">&copy;2023 Made with &nbsp; <span style="color: inherit;">&#x2665;</span> &nbsp;by Divyanshu</p></li>
+    </ul>    
+    </div>
+
+    <div class="messageBox visible"><p id="message">Timer will be added soon</p></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
